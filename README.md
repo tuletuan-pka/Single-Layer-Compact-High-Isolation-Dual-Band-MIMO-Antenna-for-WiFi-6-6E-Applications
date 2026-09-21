@@ -44,6 +44,7 @@ This repository provides the official simulation models, numerical data, experim
 ## 📁 Repository Structure & File Descriptions
 
 ```text
+```text
 .
 ├── LatinTrans - Nafosted Single Layer Dual band MIMO.pdf   # Accepted manuscript PDF
 ├── Simulation Files.aedt                                    # Ansys HFSS / Electronics Desktop simulation file
@@ -57,6 +58,10 @@ This repository provides the official simulation models, numerical data, experim
 ├── Fig. 6.csv                                               # Fig. 6: Simulated S-parameters for MIMO-2 (inverted)
 ├── Fig. 7.csv                                               # Fig. 7: Simulated S-parameters for MIMO-3 (final design)
 │
+├── Fig. 9.csv                                               # Fig. 9: Parametric sweep of decoupling stub dimension bb on |S21|
+├── Fig. 10.csv                                              # Fig. 10: Parametric sweep of stub parameter bb_c on |S21|
+├── Fig. 11.csv                                              # Fig. 11: Parametric sweep of ground stub parameter gx1 on |S11|
+│
 ├── Fig. 12 - ECC.csv                                        # Fig. 12a: Envelope Correlation Coefficient (ECC)
 ├── Fig. 12 - MEG.csv                                        # Fig. 12a: Mean Effective Gain (MEG1, MEG2)
 ├── Fig. 12 - TARC.csv                                       # Fig. 12b: Total Active Reflection Coefficient (TARC)
@@ -66,6 +71,7 @@ This repository provides the official simulation models, numerical data, experim
 ├── Fig. 14b.csv                                             # Fig. 14b: Simulated vs. measured peak realized gain
 ├── Fig. 15 - 5.3 GHz.csv                                    # Fig. 15: Radiation pattern data at 5.3 GHz (Phi/Theta cut)
 └── Fig. 15 - 6.7 GHz.csv                                    # Fig. 15: Radiation pattern data at 6.7 GHz (Phi/Theta cut)
+
 ```
 
 
