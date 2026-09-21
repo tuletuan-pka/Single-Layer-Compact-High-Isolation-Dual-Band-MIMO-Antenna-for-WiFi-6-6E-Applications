@@ -45,6 +45,7 @@ This repository provides the official simulation models, numerical data, experim
 
 ```text
 .
+├── LatinTrans - Nafosted Single Layer Dual band MIMO.pdf   # Accepted manuscript PDF
 ├── Simulation Files.aedt                                    # Ansys HFSS / Electronics Desktop simulation file
 ├── Figs. 1-4-8.txt                                          # Notes on extracting Figs. 1, 4, and 8 from AEDT
 │
@@ -69,9 +70,7 @@ This repository provides the official simulation models, numerical data, experim
 ├── Fig. 14b.csv                                             # Fig. 14b: Simulated vs. measured peak realized gain
 ├── Fig. 15 - 5.3 GHz.csv                                    # Fig. 15: Radiation pattern data at 5.3 GHz (Phi/Theta cut)
 └── Fig. 15 - 6.7 GHz.csv                                    # Fig. 15: Radiation pattern data at 6.7 GHz (Phi/Theta cut)
-
 ```
-
 
 ### 📝 Detailed Description of Files
 
@@ -110,6 +109,77 @@ This repository provides the official simulation models, numerical data, experim
 
 The provided `.csv` files can be processed and visualized using **Python**, **MATLAB**, or **OriginPro**.
 
+#### Quick Visualization with Python:
+
+Ensure you have `matplotlib` and `pandas` installed:
+```bash
+pip install pandas matplotlib
+```
+
+Run the following Python script to plot the S-parameters (Fig. 14a) and peak gain (Fig. 14b):
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 1. Plot S-parameters (Fig. 14a)
+df_s = pd.read_csv('Fig. 14a.csv')
+plt.figure(figsize=(8, 5))
+plt.plot(df_s['Freq [GHz]'], df_s['dB(S(1,1)) []'], label='|S11|', color='blue', linewidth=2)
+plt.plot(df_s['Freq [GHz]'], df_s['dB(S(2,1)) []'], label='|S21|', color='red', linestyle='--', linewidth=2)
+plt.axhline(-10, color='gray', linestyle=':', label='-10 dB threshold')
+plt.axhline(-20, color='black', linestyle=':', label='-20 dB isolation')
+plt.title('S-Parameters of Proposed MIMO Antenna (Fig. 14a)', fontsize=13)
+plt.xlabel('Frequency (GHz)', fontsize=11)
+plt.ylabel('Magnitude (dB)', fontsize=11)
+plt.xlim([4.8, 7.2])
+plt.ylim([-35, 0])
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.legend(loc='lower right')
+plt.tight_layout()
+plt.show()
+
+# 2. Plot MIMO Diversity Metrics (Fig. 12)
+df_ecc = pd.read_csv('Fig. 12 - ECC.csv')
+df_ccl = pd.read_csv('Fig. 12 - CHANNEL CAPACITY LOSS.csv')
+
+fig, ax1 = plt.subplots(figsize=(8, 5))
+ax1.plot(df_ecc['Freq [GHz]'], df_ecc['ECC []'], color='purple', linewidth=2, label='ECC')
+ax1.set_xlabel('Frequency (GHz)', fontsize=11)
+ax1.set_ylabel('ECC', color='purple', fontsize=11)
+ax1.set_ylim([0, 0.5])
+ax1.grid(True, linestyle='--', alpha=0.6)
+
+ax2 = ax1.twinx()
+ax2.plot(df_ccl['Freq [GHz]'], df_ccl['mag(CCL) []'], color='green', linestyle='--', linewidth=2, label='CCL (bps/Hz)')
+ax2.set_ylabel('CCL (bps/Hz)', color='green', fontsize=11)
+ax2.set_ylim([0, 0.5])
+
+plt.title('MIMO Diversity Performance: ECC & CCL (Fig. 12)', fontsize=13)
+fig.tight_layout()
+plt.show()
+```
+
+#### In MATLAB:
+```matlab
+% Load and plot S-parameters
+data = readmatrix('Fig. 14a.csv');
+freq = data(:, 1);
+s11  = data(:, 2);
+s21  = data(:, 3);
+
+figure;
+plot(freq, s11, 'b-', 'LineWidth', 1.5); hold on;
+plot(freq, s21, 'r--', 'LineWidth', 1.5);
+yline(-10, 'k:'); yline(-20, 'm:');
+xlabel('Frequency (GHz)');
+ylabel('Magnitude (dB)');
+title('S-Parameters of Proposed MIMO Antenna');
+legend('|S_{11}|', '|S_{21}|', 'Threshold -10 dB', 'Isolation -20 dB');
+grid on;
+```
+
+---
 
 ## 🔬 Fabrication & Experimental Verification
 
@@ -127,9 +197,25 @@ The physical prototype was fabricated on a $1.52\text{ mm}$ thick **Taconic RF-3
 
 ---
 
+## 📚 Citation
+
+If you use these simulation models, datasets, or designs in your research, please cite our paper:
+
+```bibtex
+@article{domanh2026singlelayer,
+  title={Single-Layer, Compact, High Isolation Dual-Band MIMO Antenna for WiFi 6/6E Applications},
+  author={Do-Manh, Cuong and Hoang-Thi-Phuong, Thao and Nguyen-Xuan, Quyen and Vu-Van, Yem},
+  journal={IEEE Latin America Transactions},
+  note={Submission ID: 10975},
+  year={2026}
+}
+```
+
+---
+
 ## 🏛️ Acknowledgments
 
-This research is funded by the **Vietnam National Foundation for Science and Technology Development (NAFOSTED)** under Grant number **`102.04-2023.28`**.
+This research was funded and supported by the **Vietnam National Foundation for Science and Technology Development (NAFOSTED)** under Grant number **`102.04-2023.28`**.
 
 ---
 
