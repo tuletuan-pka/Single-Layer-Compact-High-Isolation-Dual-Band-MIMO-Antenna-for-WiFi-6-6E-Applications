@@ -122,7 +122,7 @@ The physical prototype was fabricated on a $1.52\text{ mm}$ thick **Taconic RF-3
 
 ## 🏛️ Acknowledgments
 
-This research was funded and supported by the **Vietnam National Foundation for Science and Technology Development (NAFOSTED)** under Grant number **`102.04-2023.28`**.
+This research is funded by the **Vietnam National Foundation for Science and Technology Development (NAFOSTED)** under Grant number **`102.04-2023.28`**.
 
 ---
 
