@@ -112,9 +112,9 @@ The physical prototype was fabricated on a $1.52\text{ mm}$ thick **Taconic RF-3
 
 | Parameter | Lower Band (Wi-Fi 6) | Upper Band (Wi-Fi 6E) |
 | :--- | :--- | :--- |
-| **Simulated Bandwidth ($|S_{11}| \le -10\text{ dB}$)** | 5.20 – 5.37 GHz (3.2%) | 6.60 – 6.80 GHz (3.0%) |
-| **Measured Bandwidth ($|S_{11}| \le -10\text{ dB}$)** | 5.20 – 5.40 GHz (3.8%) | 6.60 – 6.84 GHz (3.6%) |
-| **Inter-port Isolation ($|S_{21}|$ / $|S_{12}|$)** | $> 20\text{ dB}$ | $> 20\text{ dB}$ |
+| **Simulated Bandwidth ($\vert S_{11}\vert \le -10\text{ dB}$)** | 5.20 – 5.37 GHz (3.2%) | 6.60 – 6.80 GHz (3.0%) |
+| **Measured Bandwidth ($\vert S_{11}\vert \le -10\text{ dB}$)** | 5.20 – 5.40 GHz (3.8%) | 6.60 – 6.84 GHz (3.6%) |
+| **Inter-port Isolation ($\vert S_{21}\vert \text{ / } \vert S_{12}\vert$)** | $> 20\text{ dB}$ | $> 20\text{ dB}$ |
 | **Measured Peak Realized Gain** | 4.6 – 5.0 dBi | 5.6 – 6.4 dBi |
 | **Radiation Efficiency** | $\approx 94\%$ | $\approx 94\%$ |
 
