@@ -76,13 +76,13 @@ This repository provides the official simulation models, numerical data, experim
 | `LatinTrans - Nafosted Single Layer Dual band MIMO.pdf` | Full text manuscript formatted according to IEEE Latin America Transactions guidelines. | All Sections |
 | `Simulation Files.aedt` | Complete 3D full-wave electromagnetic simulation model in **Ansys HFSS (Electronics Desktop)**, including 3D geometries, port definitions, boundary conditions, and frequency sweeps. | Sections II, III, IV, V |
 | `Figs. 1-4-8.txt` | Explanatory note indicating that **Fig. 1** (Geometry & dimensions), **Fig. 4** (Design evolution), and **Fig. 8** (Surface current distributions at 5.2 GHz) are built directly inside `Simulation Files.aedt`. | Figs. 1, 4, 8 |
-| `Fig. 2 - S11.csv` & `Fig. 2 - Gain.csv` | Simulated reflection coefficient $|S_{11}|$ and peak realized gain of the single dual-band radiating element across 4.8–7.2 GHz. | Section II, Fig. 2 |
+| `Fig. 2 - S11.csv` & `Fig. 2 - Gain.csv` | Simulated reflection coefficient and peak realized gain of the single dual-band radiating element across 4.8–7.2 GHz. | Section II, Fig. 2 |
 | `Fig. 3a.csv` & `Fig. 3b.csv` | Parametric study demonstrating independent frequency tuning by varying lower patch length $l_1$ and upper patch length $l_2$. | Section II, Fig. 3 |
-| `Fig. 5.csv` | S-parameters ($|S_{11}|, |S_{21}|$) of the baseline MIMO antenna (MIMO-1) with identical element orientation. | Section III, Fig. 5 |
+| `Fig. 5.csv` | S-parameters of the MIMO antenna (MIMO-1) with identical element orientation. | Section III, Fig. 5 |
 | `Fig. 6.csv` | S-parameters of MIMO-2 with inverted element configuration. | Section III, Fig. 6 |
 | `Fig. 7.csv` | S-parameters of the final proposed MIMO-3 with inverted configuration and grounded decoupling stubs. | Section III, Fig. 7 |
 | `Fig. 12 - *.csv` | Diversity performance evaluation metrics: ECC, MEG ($dB_{10}$), TARC ($dB_{20}$), and CCL. | Section IV-D, Fig. 12 |
-| `Fig. 14a.csv` & `Fig. 14b.csv` | Comparison between simulated and measured S-parameters ($|S_{11}|, |S_{21}|$) and peak realized gain of the fabricated prototype. | Section V, Fig. 14 |
+| `Fig. 14a.csv` & `Fig. 14b.csv` | Comparison between simulated and measured S-parameters and peak realized gain of the fabricated prototype. | Section V, Fig. 14 |
 | `Fig. 15 - 5.3 GHz.csv` & `Fig. 15 - 6.7 GHz.csv` | 2D Radiation patterns (E-plane and H-plane / Co- and Cross-polarization) at 5.3 GHz and 6.7 GHz. | Section V, Fig. 15 |
 
 ---
