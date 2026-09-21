@@ -43,6 +43,8 @@ This repository provides the official simulation models, numerical data, experim
 
 ## 📁 Repository Structure & File Descriptions
 
+```text
+.
 ├── LatinTrans - Nafosted Single Layer Dual band MIMO.pdf   # Accepted manuscript PDF
 ├── Simulation Files.aedt                                    # Ansys HFSS / Electronics Desktop simulation file
 ├── Figs. 1-4-8.txt                                          # Notes on extracting Figs. 1, 4, and 8 from AEDT
@@ -65,6 +67,7 @@ This repository provides the official simulation models, numerical data, experim
 ├── Fig. 15 - 5.3 GHz.csv                                    # Fig. 15: Radiation pattern data at 5.3 GHz (Phi/Theta cut)
 └── Fig. 15 - 6.7 GHz.csv                                    # Fig. 15: Radiation pattern data at 6.7 GHz (Phi/Theta cut)
 ```
+
 
 ### 📝 Detailed Description of Files
 
