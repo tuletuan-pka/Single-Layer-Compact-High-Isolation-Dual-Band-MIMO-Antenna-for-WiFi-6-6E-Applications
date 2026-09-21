@@ -44,9 +44,7 @@ This repository provides the official simulation models, numerical data, experim
 ## 📁 Repository Structure & File Descriptions
 
 ```text
-```text
 .
-├── LatinTrans - Nafosted Single Layer Dual band MIMO.pdf   # Accepted manuscript PDF
 ├── Simulation Files.aedt                                    # Ansys HFSS / Electronics Desktop simulation file
 ├── Figs. 1-4-8.txt                                          # Notes on extracting Figs. 1, 4, and 8 from AEDT
 │
