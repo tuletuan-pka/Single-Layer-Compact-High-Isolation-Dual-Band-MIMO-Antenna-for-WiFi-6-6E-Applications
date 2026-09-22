@@ -8,7 +8,7 @@
 
 ## 👥 Authors & Affiliations
 
-1. **Cuong Do-Manh** *(Corresponding Author)*  
+1. **Cuong Do-Manh**   
    - Faculty of Electrical and Electronic Engineering, PHENIKAA School of Engineering, PHENIKAA University, Hanoi 12116, Vietnam  
    - Email: [cuong.domanh@phenikaa-uni.edu.vn](mailto:cuong.domanh@phenikaa-uni.edu.vn)
 
@@ -20,7 +20,7 @@
    - School of Electrical and Electronic Engineering, Hanoi University of Science and Technology (HUST), Hanoi, Vietnam  
    - Email: [quyen.nguyenxuan@hust.edu.vn](mailto:quyen.nguyenxuan@hust.edu.vn)
 
-4. **Yem Vu-Van**  
+4. **Yem Vu-Van** *(Corresponding Author)*
    - School of Electrical and Electronic Engineering, Hanoi University of Science and Technology (HUST), Hanoi, Vietnam  
    - Email: [yem.vuvan@hust.edu.vn](mailto:yem.vuvan@hust.edu.vn)
 
