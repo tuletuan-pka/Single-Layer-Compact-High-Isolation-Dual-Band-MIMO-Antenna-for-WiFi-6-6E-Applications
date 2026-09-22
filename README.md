@@ -28,7 +28,7 @@
 
 ## 📖 About This Repository
 
-This repository provides the official simulation models, numerical data, experimental measurement results, and manuscript files for the research paper:
+This repository provides the official simulation models, numerical data and experimental measurement results for the research paper:
 
 > **"Single-Layer, Compact, High Isolation Dual-Band MIMO Antenna for WiFi 6/6E Applications"** (Submission ID: `10975`, *IEEE Latin America Transactions*).
 
